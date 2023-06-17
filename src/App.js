@@ -9,7 +9,7 @@ import { useState } from "react";
 import CreatePost from "./components/CreatePost";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false);
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
   return (
     <Router>
       <Navbar isAuth={isAuth} />
